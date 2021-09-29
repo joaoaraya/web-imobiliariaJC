@@ -1,0 +1,234 @@
+*{
+  margin-top: 2px;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url('../fonts/GoogleSans.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Google Sans Medium";
+  src: url('../fonts/GoogleSans-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#home-logo{
+  margin: 20px 0px 5px 84px;
+  max-width:240px;
+}
+
+#home-menu-bg{
+  position: absolute;
+  top: 105px;
+  left: 85px;
+  opacity: 0.96;
+}
+
+#home-menu-text-titulo{
+  position: absolute;
+  font-family: Google Sans Medium;
+  font-size: 26px;
+  letter-spacing: 12px;
+  line-height: 140%;
+  font-weight: bold;
+  color: #5A6465;
+  left: 140px;
+  top: 168px;
+}
+
+#home-menu-text-links{
+  position: absolute;
+  font-family: Google Sans Medium;
+  font-size: 18px;
+  letter-spacing: 5px;
+  line-height: 250%;
+  color: #5A6465;
+  left: 140px;
+  top: 268px;
+}
+
+#home-slider-btt{
+  font-family: Google Sans;
+  font-size:50px;
+}
+
+#home-slider-text{
+  font-family: Google Sans;
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 2px;
+  left: 64.5%;
+  top: 290px;
+  text-shadow: 0px 3px 15px #0000001a;
+}
+
+#home-miniaturas{
+  max-width:230px;
+  margin-bottom: 12px;
+}
+
+#minis-titulo{
+  font-family: Google Sans Medium;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #5A6465;
+}
+
+#minis-cidade{
+  font-family: Google Sans;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #5A6465;
+}
+
+#minis-desc{
+  font-family: Google Sans;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #5A6465;
+}
+
+#minis-valor{
+  font-family: Google Sans Medium;
+  margin-left: 10px;
+  font-size: 23px;
+  color: #569CC8;
+}
+
+#minis-btt{
+  font-family: Google Sans Medium;
+  font-size: 18px;
+  border: 2px solid  #828e90;
+  color: #828e90;
+  margin: 25px 0px;
+  text-align: center;
+  background-color: white;
+  padding: 5px 65px;
+}
+
+#modal-slider-btt-left{
+  font-family: Google Sans;
+  font-size: 20px;
+  color: #5A6465;
+  background-color: white;
+  position: absolute;
+  top: 170px;
+  left: 30px;
+  border: none;
+  display: inline-block;
+  padding: 5px 30px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  }
+
+#modal-slider-btt-right{
+  font-family: Google Sans;
+  font-size: 20px;
+  color: #5A6465;
+  background-color: white;
+  position: absolute;
+  top: 170px;
+  left: 495px;
+  border: none;
+  display: inline-block;
+  padding: 5px 30px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#modal-desc{
+  font-family: Google Sans;
+  margin-left: 85px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 160%;
+  color: #5A6465;
+}
+
+#modal-footer-btt{
+  font-family: Google Sans Medium;
+  font-size: 18px;
+  border: 2px solid  #828e90;
+  color: #828e90;
+  margin: 10px 15px;
+  text-align: center;
+  background-color: white;
+  padding: 5px 60px;
+}
+
+#btnCalcular{
+  font-family: Google Sans Medium;
+  font-size: 14px;
+  border: 2px solid  #008CBA;
+  color: #008CBA;
+  text-align: center;
+  background-color: white;
+  padding: 5px 20px;
+}
+
+#contato-info{
+  font-family: Google Sans Medium;
+  font-size: 23px;
+  color: #828e90;
+  position: relative;
+  text-align: center;
+}
+
+#sobre-perfil{
+  position: absolute;
+  border-style: solid;
+  border-width: 12px;
+  border-color: white;
+  max-width: 280px;
+  border-radius: 280px 280px 280px 280px;
+}
+
+#sobre-text{
+  font-family: Google Sans Medium;
+  position: relative;
+  font-size: 110px;
+  background: -webkit-linear-gradient(right, #C33764, #1D2671);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+#rodape-text{
+  font-family: Google Sans Medium;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #828e90;
+  left: 135px;
+  top: 310px;
+}
+
+#modal-text{
+  font-family: Google Sans;
+  font-size: 14px;
+  color: #686e73;
+  margin-left: 5px;
+  letter-spacing: 1px;
+}
+
+#botao2{
+  font-family: Google Sans;
+  font-size: 16px;
+  border: none;
+  margin: 25px 0px;
+  text-align: center;
+  background-color: #008CBA;
+  color: white;
+  padding: 14px 160px;
+}

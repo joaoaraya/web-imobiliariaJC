@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--Primeiro CSS para a caracteristicas do site-->
+  <link rel="stylesheet" href="css\reset.css">
+      <!--Arquivo bootstrap (Framework)-->
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+      <!--Leitura do stilo w3-->
+  <link rel="stylesheet" href="css\w3.css">
+      <!--Leitura final do estilo do site-->
+  <link rel="stylesheet" href="css\estilo.css">
+  <title>Imobiliária JC</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <a href="#"><img src="imagens\logo.png" id="home-logo"></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+
+              <!-- SLIDER -->
+        <div class="w3-content w3-section" style="max-width:800px">
+          <img class="mySlides w3-animate-right" src="imagens\slider1.jpg" style="width:100%">
+          <img class="mySlides w3-animate-right" src="imagens\slider2.jpg" style="width:100%">
+          <img class="mySlides w3-animate-right" src="imagens\slider3.jpg" style="width:100%">
+          <img class="mySlides w3-animate-right" src="imagens\slider4.jpg" style="width:100%">
+
+          <button class="w3-button w3-display-left w3-white" onclick="plusDivs(-1)" id="home-slider-btt">&#10094;</button>
+          <button class="w3-button w3-display-right w3-white" onclick="plusDivs(1)" id="home-slider-btt">&#10095;</button>
+
+                <!-- Texto do Slider-->
+          <span id="home-slider-text">
+              <span style="color: white; font-size: 45px;">SUA CASA</span>
+              <span style="color: #5A6465; font-size: 45px;">DOS</span> <br>
+              <span style="color: white; font-size: 32px;">SONHOS ESTÁ</span>
+              <span style="color: #5A6465; font-size: 32px;">AQUI</span>
+          </span>
+        </div>
+
+              <!--Menu no Slider-->
+        <img src="imagens\homeBg.png" id="home-menu-bg">
+        <ul id="home-menu-text-titulo">
+          <span>IMOBILI</span> <br>
+          <span>ÁRIA JC</span>
+        </ul>
+        <ul id="home-menu-text-links">
+          <li><a href="index.html#tagCasas">CASAS</a></li>
+          <li><a href="index.html#tagContato">CONTATO</a></li>
+          <li><a href="index.html#tagQuemSomos">QUEM SOMOS</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+        <!--Casas pt1-->
+    <div class="row" style="margin: 50px 50px 10px 60px;" id="tagCasas">
+      <div class="col-md-3" >
+        <img id="home-miniaturas" src="casas\Alphaville3.jpg">
+        <span id="minis-titulo">DREAM HOUSE</span> <br>
+        <span id="minis-cidade">Malibu-USA</span> <br>
+        <span id="minis-desc">8 Quartos | 12 Carros</span> <br>
+        <span id="minis-valor">R$ 10.000.000,00</span>
+        <button id="minis-btt" onclick="verMais1()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+      </div>
+      <div class="col-md-3">
+        <img id="home-miniaturas" src="casas\Alto2.jpg">
+        <span id="minis-titulo">SATURNO</span> <br>
+        <span id="minis-cidade">Alphaville-SP</span> <br>
+        <span id="minis-desc">6 Quartos | 8 Carros</span> <br>
+        <span id="minis-valor">R$ 19.000.000,00</span>
+        <button id="minis-btt" onclick="verMais2()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+      </div>
+      <div class="col-md-3">
+        <img id="home-miniaturas" src="casas\Casa2.jpg">
+        <span id="minis-titulo">MANSÃO PARAÍSO</span> <br>
+        <span id="minis-cidade">Céu-SP</span> <br>
+        <span id="minis-desc">12 Quartos | 24 Carros</span> <br>
+        <span id="minis-valor">R$ 25.000.000,00</span>
+        <button id="minis-btt" onclick="verMais3()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+      </div>
+      <div class="col-md-3">
+        <img id="home-miniaturas" src="casas\Genesis3.jpg">
+        <span id="minis-titulo">MANSÃO GENESIS</span> <br>
+        <span id="minis-cidade">Los Angeles-USA</span> <br>
+        <span id="minis-desc">5 Quartos | 4 Carros</span> <br>
+        <span id="minis-valor">R$ 6.000.000,00</span>
+        <button id="minis-btt" onclick="verMais4()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+      </div>
+    </div>
+        <!--Casas pt2-->
+    <div class="row" style="margin: 40px 50px 10px 60px;">
+      <div class="col-md-3" >
+        <img id="home-miniaturas" src="casas\Justin1.jpg">
+        <span id="minis-titulo">APTO LUXUOSO</span> <br>
+        <span id="minis-cidade">San Francisco-USA</span> <br>
+        <span id="minis-desc">8 Quartos | 8 Carros</span> <br>
+        <span id="minis-valor">R$ 12.000.000,00</span>
+        <button id="minis-btt" onclick="verMais5()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+      </div>
+      <div class="col-md-3">
+        <img id="home-miniaturas" src="casas\Mansão1.jpg">
+        <span id="minis-titulo">SOBRADO</span> <br>
+        <span id="minis-cidade">Mongaguá-SP</span> <br>
+        <span id="minis-desc">6 Quartos | 4 Carros</span> <br>
+        <span id="minis-valor">R$ 14.000.000,00</span>
+        <button id="minis-btt" onclick="verMais6()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+      </div>
+      <div class="col-md-3">
+        <img id="home-miniaturas" src="casas\Padrao1.jpg">
+        <span id="minis-titulo">MANSÃO</span> <br>
+        <span id="minis-cidade">Alphaville-SP</span> <br>
+        <span id="minis-desc">4 Quartos | 2 Carros</span> <br>
+        <span id="minis-valor">R$ 7.000.000,00</span>
+        <button id="minis-btt" onclick="verMais7()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+      </div>
+      <div class="col-md-3">
+        <img id="home-miniaturas" src="casas\Paraiba2.jpg">
+        <span id="minis-titulo">CASTELO WINX</span> <br>
+        <span id="minis-cidade">Reino Mágico-Narnia</span> <br>
+        <span id="minis-desc">6 Quartos | 8 Carros</span> <br>
+        <span id="minis-valor">R$ 10.000.000,00</span>
+        <button id="minis-btt" onclick="verMais8()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+      </div>
+    </div>
+    <!--Casas pt3-->
+<div class="row" style="margin: 40px 50px 10px 60px;">
+  <div class="col-md-3" >
+    <img id="home-miniaturas" src="casas\parnaiba1.jpg">
+    <span id="minis-titulo">RECANTO DO DS</span> <br>
+    <span id="minis-cidade">Vale do Sílicio-USA</span> <br>
+    <span id="minis-desc">6 Quartos | 6 Carros</span> <br>
+    <span id="minis-valor">R$ 17.000.000,00</span>
+    <button id="minis-btt" onclick="verMais9()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+  </div>
+  <div class="col-md-3">
+    <img id="home-miniaturas" src="casas\Santana2.jpg">
+    <span id="minis-titulo">PISCINÃO RAMOS</span> <br>
+    <span id="minis-cidade">Grécia-Grécia</span> <br>
+    <span id="minis-desc">4 Quartos | 2 Carros</span> <br>
+    <span id="minis-valor">R$ 8.000.000,00</span>
+    <button id="minis-btt" onclick="verMais10()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+  </div>
+  <div class="col-md-3">
+    <img id="home-miniaturas" src="casas\Tambore1.jpg">
+    <span id="minis-titulo">MANSÃO DO CJ</span> <br>
+    <span id="minis-cidade">Los Santos-GTA</span> <br>
+    <span id="minis-desc">4 Quartos | 6 Carros</span> <br>
+    <span id="minis-valor">R$ 12.000.000,00</span>
+    <button id="minis-btt" onclick="verMais11()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+  </div>
+  <div class="col-md-3">
+    <img id="home-miniaturas" src="casas\Paraiba2.jpg">
+    <span id="minis-titulo">TOCA DO RICO</span> <br>
+    <span id="minis-cidade">Ibirapuera-SP</span> <br>
+    <span id="minis-desc">9 Quartos | 14 Carros</span> <br>
+    <span id="minis-valor">R$ 28.000.000,00</span>
+    <button id="minis-btt" onclick="verMais12()" type="button" data-toggle="modal" data-target="#mCasa">VEJA MAIS</button>
+  </div>
+</div>
+
+        <!--Contato-->
+    <div class="row" style="margin: 40px 50px 0px 60px;" id="tagContato">
+      <div class="col-md-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.4114336988873!2d-46.68087804945913!3d-24.122185088349752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce27e8f7751d31%3A0x6382eb95def97024!2sEtec+Adolpho+Berezin!5e0!3m2!1spt-BR!2sbr!4v1541983044460" width="1000" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <ul id="contato-info">
+          <span><img style="margin: 50px 10px 50px 0; opacity: 0.7;" src="imagens\contato1.png">(13) 3412-1432</span>
+          <span><img style="margin: 50px 10px 50px 40px; opacity: 0.7;"src="imagens\contato2.png">joaoaraya7@gmail.com</span>
+          <button style="margin: 50px 0 50px 60px;" id="minis-btt" type="button" data-toggle="modal" data-target="#mandarMsg">FALE CONOSCO</button>
+        </ul>
+      </div>
+    </div>
+
+        <!--Quem Somos-->
+    <div class="row" style="margin: 0 50px 10px 60px;" id="tagQuemSomos">
+      <div class="col-md-12">
+        <span id="sobre-text" style="left: 500px; top: 5px;"><b>João F.</b></span> <br>
+        <span id="sobre-text" style="left: 490px; top: -30px;"><b>Carlos E.</b></span>
+        <span>
+          <img id="sobre-perfil" style="left: 70px; top: 10px;" src="imagens\sobre1.jpg">
+          <img id="sobre-perfil" style="left: 270px; top: 10px;" src="imagens\sobre2.jpg">
+        </span>
+      </div>
+    </div>
+
+        <!--Rodapé-->
+    <div class="row" style="text-align: center; margin: 0px 50px 30px 60px;">
+      <div class="col-md-12">
+        <span id= "rodape-text">
+            <span>Etec Adolpho Berezin,</span>
+            <span><b> Programação Web I: </b></span>
+            <span>12/11/2018</span>
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- MODAIS -->
+  <div class="row">
+        <!-- Casas -->
+      <div class="modal fade" tabindex="-1" role="dialog" id="mCasa">
+      <div class="modal-dialog" role="document">
+
+      <div class="modal-body">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-md-12" style="margin: 10px 0;">
+              <div class="w3-content w3-section" style="max-width:520px">
+                <img id="ms-casa-1" class="mySlides2 w3-animate-right" src="casas\Alphaville1.jpg" style="width:100%">
+                <img id="ms-casa-2" class="mySlides2 w3-animate-right" src="casas\Alphaville2.jpg" style="width:100%">
+                <img id="ms-casa-3" class="mySlides2 w3-animate-right" src="casas\Alphaville3.jpg" style="width:100%">
+                <img id="ms-casa-4" class="mySlides2 w3-animate-right" src="casas\Alphaville4.jpg" style="width:100%">
+
+                <button onclick="plusDivsA(-1)" id="modal-slider-btt-left">&#10094;</button>
+                <button onclick="plusDivsA(1)" id="modal-slider-btt-right">&#10095;</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-left: 12px;">
+            <div class="col-md-5">
+              <img src="imagens\modalicons.png" style="position:absolute; left:52px; top:5px;">
+              <ul id="modal-desc">
+                <span id="ms-text-1">16</span><span> quartos</span> <br>
+                <span id="ms-text-2">5</span><span> banheiros</span> <br>
+                <span id="ms-text-3">3</span><span> salas</span> <br>
+                <span id="ms-text-4">16</span><span> carros</span>
+              </ul>
+            </div>
+            <div class="col-md-7">
+              <ul id="minis-valor">
+                <span id="ms-valor-casa">R$ 10.000.000,00</span> <br>
+              </ul>
+              <span id="minis-cidade">Financiamentos:</span> <br>
+              <a href="http://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso">
+                <img style="border:5px solid transparent;" src="imagens\banco1.png"/></a>
+              <a href="https://www.itau.com.br/creditos-financiamentos/imoveis/">
+                <img style="border:5px solid transparent;" src="imagens\banco2.png"/></a>
+              <a href="https://www.webcasas.com.br/webcasas/?headerandfooter/%23/home#/home">
+                <img style="border:5px solid transparent;" src="imagens\banco3.png"/></a>
+              <a href="https://banco.bradesco/html/classic/resultado-busca/index.shtm?q=imoveis.shtm&s=Classic">
+                <img style="border:5px solid transparent;" src="imagens\banco4.png"/></a>
+              <a href="https://www42.bb.com.br/portalbb/imobiliario/creditoimobiliario/simular,802,2250,2250.bbx">
+                <img style="border:5px solid transparent;" src="imagens\banco5.png"/></a> <br>
+              <span style="color: transparent;">bancos</span>
+            </div>
+          </div>
+
+        <div class="modal-footer" style="text-align: center;">
+          <button id="modal-footer-btt" type="button" data-dismiss="modal">VOLTAR</button>
+          <button id="modal-footer-btt" type="button" data-toggle="modal" data-target="#mSimulador">SIMULADOR</button>
+        </div>
+
+      </div>
+      </div>
+      </div>
+      </div>
+
+          <!-- Simulador -->
+      <div class="modal fade" tabindex="-1" role="dialog" id="mSimulador">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+              <div class="modal-header">
+                <h3 style="text-align:center; font-size:50px; font-family: Google Sans; color: #5A6465; letter-spacing: 8px;"
+                    >SIMULADOR</h3>
+              </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label id="modal-text">VALOR DA CASA:</label>
+                  <input class="form-control" type="number" id="visorValor" placeholder="Mínimo R$ 50.000">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label id="modal-text">PARCELAS:</label>
+                  <input class="form-control" type="number" id="visorParcelas" placeholder="Quantos meses?">
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+              <div class="col-md-9">
+                <div class="form-group">
+                  <input class="form-control" type="text" id="visorResultado" readonly>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <button type="button" id="btnCalcular" class="btn btn-primary">CALCULAR</button>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fale Conosco -->
+<div class="modal fade" tabindex="-1" role="dialog" id="mandarMsg">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+        <div class="modal-header">
+          <h3 style="text-align:center; font-size:40px; font-family: Google Sans; color: #5A6465; letter-spacing: 8px;"
+              >IMOBILIÁRIA JC</h3>
+        </div>
+
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <form>
+              <label id="modal-text">Nome:</label><br>
+              <input type="text" class="form-control" name="nome" placeholder="Digite seu nome">
+              <br>
+
+              <label id="modal-text">Email:</label><br>
+              <input type="text" class="form-control" name="email" placeholder="Ex. mail@mail.com">
+              <br>
+
+              <label id="modal-text">Assunto:</label><br>
+              <select class="form-control">
+                <option value="Visita">Visita</option>
+                <option value="Contato">Contato</option>
+              </select>
+              <br>
+
+              <label id="modal-text">Mensagem:</label>
+              <textarea class='form-control'></textarea>
+              <br>
+
+              <button id="modal-footer-btt" style="margin: 10px 40px;" >ENVIAR</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <img style="position: absolute; max-width: 360px; left: -40px; top: 90px;" src="imagens\faleConosco.png">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+      <!--Codigo jQuery vem antes do bootstrap-->
+  <script type="text/javascript" src="js\jquery-3.3.1.min.js"></script>
+      <!--Javascript do bootstrap-->
+  <script type="text/javascript" src="js\bootstrap.min.js"></script>
+      <!--javascript do slider-->
+  <script type="text/javascript" src="js\slider.js"></script>
+    <!--javascript da calculadora-->
+  <script type="text/javascript" src="js\calculadora.js"></script>
+    <!--javascript das info das casas-->
+  <script type="text/javascript" src="js\casas.js"></script>
+
+</script>
+</body>
+</html>
